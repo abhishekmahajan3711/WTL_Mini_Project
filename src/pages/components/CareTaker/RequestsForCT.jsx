@@ -150,12 +150,12 @@ export default function RequestsForCT() {
             <h1 class="h-10 mt-4 font-bold text-center font-serif text-2xl m-auto w-1/3 text-blue-800">Requests For Care Taker</h1>
 
             {requests.booked === true ? (Show()) : 
-            <div class="h-10 w-2/3 m-auto font-serif text-lg flex gap-10 justify-center mt-4"><div class="animate-bounce text-center p-2 text-lg">No Requests till now ..! </div><button class="text-center font-base bg-blue-400 text-white mx-4 mt-0 py-2 px-4 rounded-xl hover:bg-blue-800 hover:text-white" onClick={() => setUpdateModal(true)}>Update Your Request </button></div>}
+            <div class="h-10 w-2/3 m-auto font-serif text-lg flex gap-10 justify-center mt-4"><div class="animate-bounce text-center p-2 text-lg">No Requests till now ..! </div><button class="text-center font-base bg-blue-400 text-white mx-4 mt-0 py-2 px-4 rounded-xl hover:bg-blue-800 hover:text-white" onClick={() => setUpdateModal(true)}>Update Your Information </button></div>}
 
 
             {/*update modal */}
             {updateModal && (<div className=" m-auto p-4 w-2/4 bg-blue-100 rounded-2xl mt-4">
-                <h2 class="p-4 text-center text-2xl font-bold font-serif">Update Request</h2>
+                <h2 class="p-4 text-center text-2xl font-bold font-serif">Update Your Information</h2>
                 <form class="p-4 text-4 text-blue-400 font-serif text-lg" onSubmit={handleUpdate}>
                     <label>Available Weekdays:</label>
                     <div class="grid grid-cols-6 gap-4 p-4 border-blue-700 border mt-2 rounded-2xl text-base">
@@ -209,9 +209,9 @@ export default function RequestsForCT() {
                         required
                     />
                     <br />
-                    <button class="p-1 pl-3 pr-3 mt-3 rounded-lg bg-green-700 text-white font-serif hover:bg-green-300" type="submit">Update Request</button>
+                    <button class="p-1 pl-3 pr-3 mt-3 rounded-lg bg-green-700 text-white font-serif hover:bg-green-300" type="submit">Update </button>
                     <br />
-                    <button class="p-1 pl-3 pr-3 mt-3 rounded-lg bg-red-700 text-white font-serif hover:bg-red-300" onClick={() => setUpdateModal(false)} >Cancel Request.</button>
+                    <button class="p-1 pl-3 pr-3 mt-3 rounded-lg bg-red-700 text-white font-serif hover:bg-red-300" onClick={() => setUpdateModal(false)} >Cancel </button>
                 </form>
             </div>
             )}
