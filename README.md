@@ -1,6 +1,6 @@
 # Helping Hands
 ## Problem Statement
-Develop a platform which will be for benefit of Senior Citizens . The Senior Citizen must be able to book Care taker , can purchase medicines, can set medicine reminders. 
+Develop a platform which will be for benefit of Senior Citizens . The Senior Citizen must be able to book care-taker , can purchase medicines, can set medicine reminders. 
 
 ## Tech Stack
 - React JS , Tailwind CSS
